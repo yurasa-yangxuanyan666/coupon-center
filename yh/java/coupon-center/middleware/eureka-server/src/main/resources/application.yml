@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: coupon-eureka
+server:
+  port: 10000
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    fetch-registry: false
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://peer2:10001/eureka
