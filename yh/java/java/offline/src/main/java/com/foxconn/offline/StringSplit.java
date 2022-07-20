@@ -26,29 +26,23 @@ public class StringSplit {
         }
         return  array1;
     }
-    public Map DeptSplit(String rules){
+    public Map DeptSplit(String rules,int maxConfig){
         String[] array1=rules.split("/");
         System.out.println("部门数："+array1.length);
         Map<String,Integer> map=new HashMap<>();
         int b = 0;
         for (int i = array1.length-1; i >=0; i--) {
-            if (array1[i].contains("[")){
-                String regEx="[^0-9]";
-                Pattern p=Pattern.compile(regEx);
-                Matcher m=p.matcher(array1[i]);
-                String n=m.replaceAll("").trim();
-                b=Integer.parseInt(n);
-            } else {
-                if (!array1[i].contains("[")){
-                String regEx="[^0-9]";
-                Pattern p=Pattern.compile(regEx);
-                Matcher m=p.matcher(array1[i+1]);
-                String n=m.replaceAll("").trim();
-                b=Integer.parseInt(n);
-                }
+            if (ExtractTarget.ExtractTargets(array1[array1.length-1])==1){
+                b=maxConfig;
+            }else if (array1[i].contains("[")) {
+                b = ExtractTarget.ExtractTargets(array1[i]);
+            } else if (!array1[i].contains("[")){
+                b = ExtractTarget.ExtractTargets(array1[i+1]);
             }
-            map.put(array1[i],b);
-            System.out.println(array1[i]+"的值为"+map.get(array1[i]));
+
+
+            map.put(array1[i], b);
+            System.out.println(array1[i] + "的值为" + map.get(array1[i]));
         }
         return map;
     }

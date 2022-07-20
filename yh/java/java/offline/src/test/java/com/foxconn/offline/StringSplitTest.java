@@ -13,13 +13,16 @@ public class StringSplitTest {
     public void testSplit2(){
         String rule="Desense[30]/Coex/SystemEE[15]";
         String rule1="Coex";
-        new StringSplit().DeptSplit(rule);
+        String rule2="Coex/Desense/SystemEE";
+
+
+        int maxConfig=100;
+        new StringSplit().DeptSplit(rule2,100);
     }
-/*    @Test
-    public void testNumber(){
-        String rules="Coex[20]";
-        String rule1="Desense";
-        System.out.println(new StringSplit().number(rule1));
-    }*/
+    @Test
+    public void testnumber(){
+        String rule1="Coex";
+        System.out.println(ExtractTarget.ExtractTargets(rule1));
+    }
 
 }
