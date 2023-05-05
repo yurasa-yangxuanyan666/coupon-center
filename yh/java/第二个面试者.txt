@@ -1,0 +1,513 @@
+Okay, let me introduce ourselves.
+Today we will have two interviewers.
+I'm Joyce and I'm the software PM.
+And he is Albert. He is a technical engineer, also from software development department.
+You want to let us fully understand you.
+We need you to speak English as slowly as you can and be more clear.
+First, could you tell us a little bit about yourself?
+Yeah, so this is Mac. I have around 5.5 years of experience.
+And right now I'm working with Airtel XLabs in their acquisition department.
+So Airtel XLabs is a leading telecommunication company.
+And I work in the pre-paid, I handle the pre-paid applications.
+And the tech stack that we use is mainly Java.
+And we are basically using microservice architecture.
+The database that we use is Oracle.
+We use Redis, Cache, we use Apple Timetable, we use Solace as well.
+Yeah, that's a little bit about myself.
+Okay.
+Okay, so from your rally, I saw that you have three or more work experience.
+So I would like to know about why you...
+This is for the recent work experience.
+You only worked there for about one and a half years.
+I would like to know why do you want to leave your current company and want to join us?
+Basically, I'm looking for an organization change and change in the work environment as well.
+So that I can be into a different domain and get into a more challenging work.
+Okay.
+Since I think for your, you said you get to do some, look for some challenging work.
+But in our company, maybe a little different from your previous company.
+Our company is produced and assembled for iPhone.
+Maybe a little different from your previous company.
+Okay.
+Okay.
+And so, let me introduce about our, how much do you know about our company, our focus company?
+Basically, I know that it is like an oddity kind of platform.
+Yes.
+Like for entertaining, related to cinema.
+Yes.
+Our company is produced and assembled for iPhone for Apple.
+Yes.
+Most of people know about this.
+And basically, we are also a multinational electronical manufacturing company.
+And yes, I think we are the world's largest electronic manufacturing company.
+If we start to buy a revenue, I think.
+Okay.
+And since our factory, our company is focused on production and assembly for iPhone.
+So for our software department, we are able to, we are majorly responsible to develop and offer trust to help our production.
+Yes.
+Our departments have already developed several trust to successfully implement to production.
+Yes.
+To measure the production process.
+And our duty is mainly to launch it and implement successfully and to maintain it.
+Okay.
+Do you have any questions about our job responsibilities?
+Okay.
+Yes, I'm good actually.
+Okay.
+So besides this, we also have some major related questions for you.
+Okay.
+And our engineer, Albert, will handle this.
+Besides this, we also put these questions in the chat box.
+So we can share your screen.
+Okay.
+Okay.
+Can you see the screen?
+Can you see the question?
+Yeah, yeah.
+Okay.
+Now I can.
+Yes, this is the question.
+We will go through these questions that you review first.
+And then you can answer it one by one.
+Okay?
+Okay.
+This is the first question.
+This is the second.
+Okay, this is the third.
+Okay, this is the fourth.
+Yes, I can see.
+Okay, this is the fifth.
+Yeah, I can.
+Okay, this is the sixth.
+Yeah.
+The seventh.
+Yeah, I can.
+Eighth.
+Yeah, okay.
+Okay, the ninth.
+Okay, yeah.
+The last one.
+Totally ten questions.
+Yes, totally.
+Okay, I will go back to the first one.
+Okay, for the first one.
+How have you applied your skills in modernist applications and event-driven architectures?
+You can think about it and answer these questions to us.
+So, basically, I can talk about the project that I did in the IntelliX platform.
+So, we used event-driven architecture and messaging broker that we used was RabbitMQ.
+The task was, we wanted to, basically, we had a utility that downloads PDF files from S3.
+So, earlier what it was running, there was an SFTP path, people used to upload CSV and download.
+But there was no auditing as well and no monitoring for that thing.
+So, what we decided, basically, to prevent frauds, since there was no auditing before,
+we made, basically, two microservices and we made one UI.
+Basically, one microservice was a backend for that portal that we knew and one was a consumer service.
+Our goal was to implement many utilities, basically, to integrate a couple of utilities into that consumer service.
+So, I started writing one consumer that was downloaded PDF file from S3.
+We, basically, designed the schema, we decided how the HLG was going to be, how the request-response was going to be decided.
+And then, after finalizing the request-response schema, then we started this application.
+For the event-driven, we used RabbitMQ.
+We were using, basically, whenever, let's say, I am a user, I log into the system, I upload a CSV file.
+So, that CSV file will be uploaded on the SFTP path and we will send an event about the path of the file to the main.
+Basically, that event is consumed by RabbitMQ.
+Then, the consumer will read that event and it will download that CSV file and it will read that CSV file.
+And corresponding to that CSV file, it will download the PDF files, basically, by fetching the path from the database from S3.
+So, that is how we did that.
+We, basically, made one table and we made one schema, basically, for auditing.
+That tells the audit HLG, the user theme and the input path, the output path and the result as well.
+Okay.
+Next question.
+Okay, for the last question.
+How do you handle production issues?
+So, whenever we get a noise from the market, since, basically, we are in a pre-paid acquisition,
+around, maybe, 500,000 to 600,000 daily acquisitions happen in pre-paid.
+So, it is very common for getting a production issue, basically, what we do.
+For every order, we generate a unique CAF number.
+And we have our Kibana indexes as well.
+For every application, we have Kibana indexes.
+So, we log into that Kibana, then we search for the CAF and I, basically, follow how the process is going and where it won't work.
+So, that is how I follow.
+Then, I can give you one example.
+So, recently, what happened, like a couple of months ago, there was an agent who was trying to onboard a customer,
+but he was not able to onboard the customer because he was not able to log in to the application.
+Because whenever an order is happening, an EKYC verification happens for both the agent and the customer.
+So, in the EKYC verification, the agent, he was newly onboarded.
+His name, basically, he had a name with a curly brace in his name.
+So, there was curly brace in his name and it was on his government ID as well.
+And we have name validation in our application.
+So, we figured that, okay, the code was breaking in the validation segment because of his name.
+So, that's how I came to know that this was the reason.
+He was not able to do the acquisition.
+And one more production issue I can tell you about, basically,
+there was a foreign national who was trying to buy the Airtel SIM.
+He was not able to do, he was not able to buy it because of the nationality.
+We have actually validation of nationality as well.
+So, his nationality that was mentioned on his card, on his passport was different.
+I think he was from Serbia.
+So, Serbia is a country.
+So, Serbian, basically, kind of dicto nationalities and with different spellings.
+So, we then, okay, we added his nationality to the database.
+Then we solved that issue.
+Basically, we used Kibana.
+Basically, n-proper logging mechanism we followed to find out the n-proper exception handling with proper messages.
+That's how we came to know where the issue came and how to fix it.
+Okay.
+Okay, thank you.
+And for the next question, what factors do you consider when designing new APIs?
+Yeah.
+The TPS, how much TPS it is going to be or how much TPS we will get on that API.
+The request and response, proper request and response with proper HTTP status codes.
+Right.
+And we, JSON, we basically use it as architectural style.
+So, proper JSON message and proper JSON request and response.
+Yeah, and whether the request is going to be get, post, put or delete.
+Then with the proper naming convention and following the design like noun and the verb is basically HTTP method.
+So, it should be like get, post and with the naming convention like employees slash employees.
+If it is going to be a list of all employees.
+If I am deleting one, then again slash employees with the post method.
+If I am fetching employee with an ID, slash employee slash ID with the get method.
+That's how we follow and we follow the versioning as well.
+And proper annotation like REST controller.
+Yeah, that's how I follow.
+Okay, thank you.
+For the next question, how do you ensure a smooth deployment process?
+Yeah.
+So, I can talk about one application that I made from scratch.
+So, basically I developed it using Svengood framework.
+Then I contact with the DevOps team and basically they set up a CI-CD pipeline for that application.
+I basically made a Docker file, a Jenkins file and a K8s file, like Kubernetes file.
+Then I connected with them.
+Then we basically set up on 5% server.
+Basically for a couple of days to test whether all the APIs are getting.
+Basically for the smaller region, we launch one instance.
+Then if everything is working fine, then we go for a 100% release.
+After release, we make health report.
+I also basically check logs of the application whether all the orders are coming or not.
+Then in the health report, we mention what was the release and who was the retailer.
+And audit logs, not audit logs, basically the server logs and the logs that shows the orders are successful.
+That's how we follow deployment process.
+Based on this question, I want to know have you used Docker or Kubernetes to deploy your applications?
+Basically, Kubernetes and Docker, they are all maintained by the DevOps team.
+For a developer, we just have to make a K8s file, a Kubernetes file and a Docker file in the root directory.
+When the CI-CD is set up like Jenkins file, we do a code pushout.
+Basically, a master branch is there for the deployment.
+And before deployment, what we do?
+For a siting environment, we have a different branch, Reels.
+And for a U8 environment, we have a different branch, Reels beta.
+So what we do?
+What I basically did, I first made the application.
+Then I pushed all the code on the Reels branch.
+Then we did SIT testing.
+After getting the SIT sign-off, I went for the Reels beta, which is for the U8 environment.
+After the U8 environment was done, I got the U8 sign-off.
+Then I merged all the code into the master branch.
+My manager, basically my lead, he reviewed the code.
+Then I merged it with the code, merged it with the master branch.
+Then the CI-CD starts.
+And that day, I sit with the DevOps person.
+Then they take care, basically.
+After that, they take care of Kubernetes and Docker.
+At the end, we do not develop our own.
+Don't take care of that.
+And also for releasing anything, we basically take it on Jira.
+And after the change request is created, the security team approves.
+And if we are exposing any new API into our application, then we also have to include
+basic auth or JWT token based on the requirement.
+If it is a server-to-server call, then ACPOP is fine.
+But if the API is going to interact with the public, if it is going on the Internet,
+we need a JWT token or two-factor authorization.
+For the last question, what design patterns do you use when restructuring the load on
+boarding systems or free charge?
+So the design patterns that we use were a builder pattern, the facade pattern, and the
+factory pattern.
+We use these patterns.
+Facade pattern means, like facade is basically just like, let's say we have this.
+For load on boarding, we had many services and we did not want to expose all the services
+on the current loader.
+So what we did, we made a facade.
+And there was only one service called facade service that was interacting with control.
+And all every services, like validation service or any downstream API call, everything was
+happening on the facade service.
+So that was the facade pattern.
+We used builder pattern as well because in FIO for entities, we had so many fields.
+We did not want to make different constructors because we had to use different of, we had
+basically, there were many, many times we had to use instances of different, different
+fields, like first name or second name.
+So what if a person passes second name instead of first name and first name instead of second
+name.
+So to avoid such things, we implemented a builder pattern.
+And also we have a logbook in Spring Boot framework.
+We can directly use annotations and build a pattern using logbook.
+But we implemented normal builder pattern.
+And we used a factory pattern as well.
+Factory pattern I used to, basically we have this one notification service that we wanted
+to send.
+And we were using SQS, I remember.
+And for that, and we were sending notifications, basically after the loan is given, we basically
+send SMS and email notification.
+For that, we used factory pattern.
+Okay.
+Thank you.
+And for the next question, how did you use radius as a cache and messaging queen?
+Basically, I have used radius as a cache only, not as a messaging queen.
+So I'll tell you how to use it as a cache.
+Okay.
+I know, I know.
+Tell me about radius and why you choose it in your project.
+Basically, we had so many configurations and we stored all the configurations in the database
+to avoid many network calls.
+What we did, we stored all the configurations in the radius and then the application starts.
+All the configurations are fetched from database and we store into the radius.
+And whenever there is a particular get request comes, we just fetch it from radius.
+We use that in the free chart as well.
+And as well as in NETL, we are using.
+So in NETL, how we use?
+Whenever we are making a new feature, we make that feature as a flat-based feature initially.
+So if the feature does not work so that we just turn off the flat and we do not have to revert the what.
+Basically, we do not have to revert our jar basically.
+In some applications we use what, in some applications we use jar.
+So to avoid reverting, to avoid rollback, basically we used flat-based mechanism.
+So we write our code in a flat-based manner.
+When the flag is 1, that means that portion of code will be executed.
+Else, the earlier version that how it was running before, it will be executed.
+So we make that flag and store it to the red database as well as in.
+And then for the first one, it will be saved to the radius as well.
+And if everything is working fine, we monitor everything.
+And then we remove flag and we factor out the code.
+If something that is needed, flat-based, we keep it as it is.
+If it is not required as a flat-based, like if it is going to be a permanent feature,
+then we remove that code in further releases.
+And we are using the Sentinel approach in our production, not as a cluster root.
+So we have this one, like Sentinel in the master-slave replica, master-slave map.
+That's how we are using.
+How did you use Kafka to implement message queues?
+Basically, I have not actually worked on Kafka, I was learning Kafka.
+To implement messaging queue, we have used RabbitMQ.
+So I can talk about RabbitMQ, how I used.
+Sorry, Panan, have you ever used Kafka?
+No, no, I have not used Kafka. Actually, I am learning Kafka.
+But your skin, Kafka is on AVG.
+Yeah, yeah, that's what I am saying. I am learning Kafka online.
+So we have not used Kafka yet.
+I wanted to know, what is the difference between Kafka and RabbitMQ?
+This is on your skins.
+Kafka is basically a pull-based mechanism, and RabbitMQ is a push-based mechanism.
+What I mean by push-based and pull-based is,
+the broker of RabbitMQ is a smart broker.
+Basically, it knows where to push message.
+Because we have a binding in RabbitMQ.
+But it's called exchange.
+In RabbitMQ, we push message on exchange, and the exchange sends a message on the consumer.
+Whereas in Kafka, the Kafka broker is dumb,
+because the consumer in Kafka, the broker does not know where to push message.
+It is the consumer that knows from where they have to pull messages.
+So you publish a topic, publish a message on topic,
+and that topic does not know where to push message.
+We configure the consumer to read from a particular topic at a particular offset.
+This is one of the differences.
+And one more difference is,
+in Kafka, we can basically retain messages.
+We have a retention policy in Kafka.
+Let's say, if you have sent a message in Kafka,
+and you have set a retention policy of one day,
+even if that consumer read the message, you can re-read that message.
+But this is not the case in RabbitMQ.
+If a message is consumed in RabbitMQ,
+then you cannot re-read that message.
+These are some of the differences.
+And one of the things is,
+Kafka is like a log, like a write-write.
+You just keep on writing at the end.
+And whereas, RabbitMQ is a queue-based data structure,
+like a first-in-first-out kind of.
+For the next question,
+how do you apply system design concepts?
+Sharding is the API's theorem,
+and a consistent, harsh ASM choice to absorb real-world problems.
+Just give me some examples about your training in your project.
+Yeah, yeah.
+So, let's start with sharding.
+Sharding is mostly used in non-SQL databases.
+Sharding means scaling your application horizontally, not vertically.
+SQL databases can only be scaled vertically, not horizontally.
+And when I say horizontal scaling,
+it means storing data on different nodes.
+Let's say you are doing sharding based on ID.
+So, if a particular user from this ID,
+his data will be saved in pod A.
+And we can apply a load balancer there.
+And this is also, we can do consistent hashing here.
+Like a particular request going on a particular node.
+Yeah, consistent hashing.
+This is basically sharding,
+like storing data on different, different nodes.
+This is data sharding.
+And consistent hashing is,
+let's say we have a load balancer.
+Basically, let's say we have three nodes running,
+and we have a load balancer behind it,
+and the request is coming.
+The request for a particular user, let's say user A,
+is going on a node A only.
+And tomorrow we decide to include one more node
+as the load of our application is in the name,
+so we decided to fire up a new instance.
+But initially, what we were using for load balancer,
+we were using, let's say N by modular,
+like a number, modular operation.
+So, using this approach, the request,
+it does not guarantee that the request A will go to the node A now,
+because the data of user A is stored on the node A only.
+But now it will go on node B.
+So, to avoid such thing,
+we basically do consistent hashing.
+Consistent hashing is basically like a circular ring,
+and the nodes are scattered over there.
+And we have a region,
+let's say we have a circular ring and four nodes on it,
+12, 3, 6, and 9.
+These are the, it's considered like clock,
+and these are the four points where you have set up the nodes.
+So, for 0, for 12 to 3,
+you have one region, 3 to 6, one region, another region,
+6 to 9, third region, and 9 to 12, fourth region.
+So, now what would happen if
+a node on third point goes down,
+you would get,
+so all the requests would be handled by the sixth,
+but you would get the,
+sixth would get more requests.
+The proper node will load when nodes are distributed equally.
+So, in consistent hashing,
+the nodes are like,
+gradually, like a small, small portion is there,
+like if any node goes down,
+all the requests handled by that node
+will be distributed equally among the three nodes.
+That is consistent hashing.
+And LSM trees are basically the log structure
+to merge trees.
+So, all the nomasql databases
+are on LSM trees.
+In LSM trees,
+it is like,
+we have a groom filter and a compactor.
+LSM trees are basically used,
+we have write-intensive applications.
+So, for write-intensive applications,
+all basically the nomasql databases
+are used for write-intensive applications.
+And LSM trees are the backbone of nomasql databases.
+Okay.
+Yeah.
+Edison Bridge.
+Okay, okay.
+Okay.
+I think that's all for the professional
+online test.
+We also have some other questions.
+Since our department
+usually to support our production,
+our project production,
+including engineering and MPA production.
+So, sometimes we may have
+some necessary work overtime.
+And could you
+explain about it?
+Pardon me, I may not understand.
+Okay.
+Our department is majorly focused
+to support our project production,
+including some engineering build
+and some MPA production.
+So, our department,
+if needed, we need to
+support them so we have some
+necessary work overtime.
+Can you explain about it?
+Yeah, it's fine.
+For the production issue, that's totally acceptable.
+Yeah, so,
+from your previous work,
+do you need to work overtime?
+In our company, we usually have
+maybe 2 hours a day or
+maybe 30 hours per week.
+Frequently like that.
+Are you asking
+how frequent do I support
+for production issues?
+It depends on the new project
+needed.
+I'll tell you
+the prepaid application.
+Basically, I own the prepaid.
+So, many a times, whenever there is a production issue,
+I have to take care on weekend as well.
+I sit with the DevOps team, I check the logs,
+then we resolve the production issues.
+Yes.
+So, usually you need to
+use your spare time.
+Yeah, I use my spare time.
+Yes, and we usually
+from our China side, we don't have
+a laptop so we usually need to work
+in our office.
+Is that acceptable for you?
+Yeah, it's acceptable.
+Thank you.
+Our company is an international company.
+Currently, we are in China.
+So, if you successfully
+join us in the future,
+we may need you to travel to China
+and have some overseas business trip.
+Usually, it's about
+1 month, maybe 2 or 3 months a time.
+So, could you accept that?
+Yeah, I accept.
+Okay, great.
+So, let's say maximum
+it's going to be about 2 or 3 months and
+what is it going to be like?
+In this department,
+we usually develop
+some tools
+like some production tools
+to support our
+production.
+Currently, we have
+successfully implemented
+several
+software tools and
+from our
+production line from the first
+station to
+all of these products
+so the production status
+we are tracking by our tools.
+For us, our duty is to
+maintain
+these tools
+software tools
+not for the already
+implemented tools.
+Besides this, we usually need to develop
+some new tools, software tools
+to make our production
+or our work more smoothly.
+It depends on the other department's
+requirements or
+both departments' requirements.
+Yes.
+Okay.
+Do you have any other questions for us?
+No, I don't have any other questions.
+Okay.
+I think it's good for today's interview.
+We will discuss internal teams
+and we will feedback our results
+to our India HR guys
+and they will transfer it to you.
+Okay?
+Thank you.
+Thank you.
